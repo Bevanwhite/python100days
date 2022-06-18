@@ -36,5 +36,27 @@
 
 # exercise 03
 # get the number of letter's in the input string
-name = input("what is your name? ")
-print(len(name))
+# name = input("what is your name? ")
+# print(len(name))
+
+# alternative solution - one line code
+# print(len(input("what is your name?")))
+
+# day exercise 04 variables Exercise
+# 🚨 Don't change the code below 👇
+a = input("a: ")
+b = input("b: ")
+# 🚨 Don't change the code above 👆
+
+####################################
+#Write your code below this line 👇
+c = a
+a = b
+b = c
+
+#Write your code above this line 👆
+####################################
+
+# 🚨 Don't change the code below 👇
+print("a: " + a)
+print("b: " + b) 
