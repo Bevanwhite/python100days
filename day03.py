@@ -31,18 +31,18 @@
 # print(f"Your BMI is {round(bmi)}, {weight_description}")
 
 # 🚨 Don't change the code below 👇
-year = int(input("Which year do you want to check? "))
+# year = int(input("Which year do you want to check? "))
 # 🚨 Don't change the code above 👆
 
 #Write your code below this line 👇
 
-if(year % 4 == 0):
-    if(year % 100 == 0):
-        if (year % 400 == 0):
-            print("Leap year 1")
-        else:
-            print("not Leap year.1")
-    else:
-        print("Leap year 2")
-else:
-    print("not Leap year.3")
+# if(year % 4 == 0):
+#     if(year % 100 == 0):
+#         if (year % 400 == 0):
+#             print("Leap year 1")
+#         else:
+#             print("not Leap year.1")
+#     else:
+#         print("Leap year 2")
+# else:
+#     print("not Leap year.3")
