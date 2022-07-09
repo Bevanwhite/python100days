@@ -47,27 +47,4 @@ else:
         print("you win")
     elif user_number == computer_number:
         print("it's a draw")
-
-# elif(number == 0): # 'rock'
-#     if number1 == rock:  
-#         print("it's a draw")
-#     elif number == paper:
-#         print("you win")
-#     elif number == 2: 
-#         print("you loose")
-# elif(number1 == 'paper'):
-#     if number == 0:  # 'rock'
-#         print("you loose")
-#     elif number == 1: # 'paper'
-#         print("it's a draw")
-#     elif number == 2: # 'scissors'
-#         print("you win")
-# elif(number1 == 'scissors'):
-#     if number == 0:
-#         print("you win")
-#     elif number == 1:
-#         print("you loose")
-#     elif number == 2:
-#         print("it's a draw")
-
     
