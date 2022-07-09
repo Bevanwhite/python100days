@@ -27,41 +27,47 @@ scissors = '''
 
 #Write your code below this line 👇
 import random
-number = int(input("what do you choose? Type 0 for Rock, 1 for paper and 2 for scissors\n"))
-if(number==0):
-    print(f"your choice:\n {rock}")
-elif(number==1):
-    print(f"your choice:\n {paper}")
-elif(number==2):
-    print(f"your choice:\n {scissors}")
+user_number = int(input("what do you choose? Type 0 for Rock, 1 for paper and 2 for scissors\n"))
+images = [rock,paper,scissors]
 
-number1 = random.choice(['rock','paper','scissors'])
+computer_number = random.randint(0,2)
 
-if(-1>=number or number>=3): 
-    print("you have entered a wrong number \ntry 0,1,2")
-elif(number1 == 'rock'):
-    print(f"computer choice:\n {rock}")
-    if number == 0:  # 'rock'
-        print("it's a draw")
-    elif number == 1: # 'paper'
+if(-1>=user_number or user_number>=3): 
+    print("you have entered a wrong number.\n You loose\ntry 0,1,2")
+else:
+    print(f"your choice:\n {images[user_number]}")
+    print(f"computer choice:\n {images[computer_number]}")
+    if user_number == 0 and computer_number == 2:
         print("you win")
-    elif number == 2: # 'scissors'
+    elif user_number == 2 and computer_number == 0:
         print("you loose")
-elif(number1 == 'paper'):
-    print(f"computer choice:\n {paper}")
-    if number == 0:  # 'rock'
+    elif user_number < computer_number:
         print("you loose")
-    elif number == 1: # 'paper'
-        print("it's a draw")
-    elif number == 2: # 'scissors'
+    elif user_number > computer_number:
         print("you win")
-elif(number1 == 'scissors'):
-    print(f"computer choice:\n {scissors}")
-    if number == 0:
-        print("you win")
-    elif number == 1:
-        print("you loose")
-    elif number == 2:
+    elif user_number == computer_number:
         print("it's a draw")
+
+# elif(number == 0): # 'rock'
+#     if number1 == rock:  
+#         print("it's a draw")
+#     elif number == paper:
+#         print("you win")
+#     elif number == 2: 
+#         print("you loose")
+# elif(number1 == 'paper'):
+#     if number == 0:  # 'rock'
+#         print("you loose")
+#     elif number == 1: # 'paper'
+#         print("it's a draw")
+#     elif number == 2: # 'scissors'
+#         print("you win")
+# elif(number1 == 'scissors'):
+#     if number == 0:
+#         print("you win")
+#     elif number == 1:
+#         print("you loose")
+#     elif number == 2:
+#         print("it's a draw")
 
     
