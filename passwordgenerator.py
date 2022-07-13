@@ -10,21 +10,18 @@ nr_symbols = int(input("How many symbols would you like?\n"))
 nr_numbers = int(input("How many numbers would you like?\n"))
 
 # option01
-ra_letters = []
+ra_password = []
 for i in range(0, nr_letters):
-    ra_letters += random.choice(letter)
-ra_symbols = []
+    ra_password.append(random.choice(letter))
 for i in range(0, nr_symbols):
-    ra_symbols += random.choice(symbols)
-ra_numbers = []
+    ra_password += random.choice(symbols)
 for i in range(0, nr_numbers):
-    ra_numbers += random.choice(numbers)
+    ra_password += random.choice(numbers)
 
-ra_sequances = ra_letters + ra_numbers + ra_symbols
-print(ra_sequances)
-random.shuffle(ra_sequances)
+print(ra_password)
+random.shuffle(ra_password)
 password_you_get = ""
-for i in ra_sequances:
+for i in ra_password:
     password_you_get += i
 
 print(f"Here is your password: {password_you_get}")
